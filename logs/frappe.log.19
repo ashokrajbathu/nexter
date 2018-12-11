@@ -1,0 +1,1981 @@
+[DEBUG] 2018-11-13 10:54:03,714 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 10:55:03,942 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 10:55:03,997 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 10:56:04,139 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 10:56:04,217 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 10:57:04,334 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 10:57:04,375 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 10:58:04,501 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 10:58:04,564 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 10:59:04,764 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 10:59:04,811 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:00:05,022 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:00:05,138 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:01:05,632 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:01:05,919 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:02:06,059 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:02:06,120 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:03:06,667 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:03:06,715 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[ERROR] 2018-11-13 11:03:18,207 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/app.py:
+Site: localhost
+Form Dict: {
+ "cmd": "frappe.utils.help.get_help", 
+ "text": "system user"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/a2k/nextErp/frappe-bench/apps/frappe/frappe/app.py", line 55, in application
+    response = frappe.handler.handle()
+  File "/home/a2k/nextErp/frappe-bench/apps/frappe/frappe/handler.py", line 20, in handle
+    data = execute_cmd(cmd)
+  File "/home/a2k/nextErp/frappe-bench/apps/frappe/frappe/handler.py", line 55, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/a2k/nextErp/frappe-bench/apps/frappe/frappe/__init__.py", line 1007, in call
+    return fn(*args, **newargs)
+  File "/home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/help.py", line 26, in get_help
+    return HelpDatabase().search(text)
+  File "/home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/help.py", line 81, in search
+    select title, intro, path from help where match(content) against (%s) limit 10''', ('%'+words+'%', words))
+  File "/home/a2k/nextErp/frappe-bench/apps/frappe/frappe/database/database.py", line 154, in sql
+    self._cursor.execute(query, values)
+  File "/home/a2k/nextErp/frappe-bench/env/local/lib/python2.7/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/a2k/nextErp/frappe-bench/env/local/lib/python2.7/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/a2k/nextErp/frappe-bench/env/local/lib/python2.7/site-packages/pymysql/connections.py", line 516, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/a2k/nextErp/frappe-bench/env/local/lib/python2.7/site-packages/pymysql/connections.py", line 727, in _read_query_result
+    result.read()
+  File "/home/a2k/nextErp/frappe-bench/env/local/lib/python2.7/site-packages/pymysql/connections.py", line 1066, in read
+    first_packet = self.connection._read_packet()
+  File "/home/a2k/nextErp/frappe-bench/env/local/lib/python2.7/site-packages/pymysql/connections.py", line 683, in _read_packet
+    packet.check_error()
+  File "/home/a2k/nextErp/frappe-bench/env/local/lib/python2.7/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/a2k/nextErp/frappe-bench/env/local/lib/python2.7/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+ProgrammingError: (1146, u"Table '_334389048b872a53.help' doesn't exist")
+[ERROR] 2018-11-13 11:03:18,275 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2018-11-13 11:03:18.208248-127.0.0.1-cd7
+[DEBUG] 2018-11-13 11:04:06,962 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:04:07,033 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:05:07,285 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:05:07,348 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:06:07,818 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:06:08,044 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:07:08,210 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:07:08,250 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:08:08,490 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:08:08,579 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:09:09,124 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:09:09,199 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:10:09,568 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:10:09,865 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:11:10,018 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:11:10,085 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:12:10,244 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:12:10,308 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:13:10,447 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:13:10,518 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:14:10,651 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:14:10,708 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:15:11,113 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:15:11,454 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:16:11,811 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:16:12,114 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:17:12,333 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:17:12,388 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:18:12,593 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:18:12,637 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:19:12,760 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:19:12,810 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:20:12,961 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:20:13,033 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:21:13,247 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:21:13,292 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[ERROR] 2018-11-13 11:21:26,545 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/app.py:
+Site: localhost
+Form Dict: {
+ "cmd": "frappe.utils.help.get_help", 
+ "text": "wewe"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/a2k/nextErp/frappe-bench/apps/frappe/frappe/app.py", line 55, in application
+    response = frappe.handler.handle()
+  File "/home/a2k/nextErp/frappe-bench/apps/frappe/frappe/handler.py", line 20, in handle
+    data = execute_cmd(cmd)
+  File "/home/a2k/nextErp/frappe-bench/apps/frappe/frappe/handler.py", line 55, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/a2k/nextErp/frappe-bench/apps/frappe/frappe/__init__.py", line 1007, in call
+    return fn(*args, **newargs)
+  File "/home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/help.py", line 26, in get_help
+    return HelpDatabase().search(text)
+  File "/home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/help.py", line 81, in search
+    select title, intro, path from help where match(content) against (%s) limit 10''', ('%'+words+'%', words))
+  File "/home/a2k/nextErp/frappe-bench/apps/frappe/frappe/database/database.py", line 154, in sql
+    self._cursor.execute(query, values)
+  File "/home/a2k/nextErp/frappe-bench/env/local/lib/python2.7/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/a2k/nextErp/frappe-bench/env/local/lib/python2.7/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/a2k/nextErp/frappe-bench/env/local/lib/python2.7/site-packages/pymysql/connections.py", line 516, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/a2k/nextErp/frappe-bench/env/local/lib/python2.7/site-packages/pymysql/connections.py", line 727, in _read_query_result
+    result.read()
+  File "/home/a2k/nextErp/frappe-bench/env/local/lib/python2.7/site-packages/pymysql/connections.py", line 1066, in read
+    first_packet = self.connection._read_packet()
+  File "/home/a2k/nextErp/frappe-bench/env/local/lib/python2.7/site-packages/pymysql/connections.py", line 683, in _read_packet
+    packet.check_error()
+  File "/home/a2k/nextErp/frappe-bench/env/local/lib/python2.7/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/a2k/nextErp/frappe-bench/env/local/lib/python2.7/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+ProgrammingError: (1146, u"Table '_334389048b872a53.help' doesn't exist")
+[ERROR] 2018-11-13 11:21:26,622 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2018-11-13 11:21:26.545966-127.0.0.1-b26
+[DEBUG] 2018-11-13 11:22:13,400 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:22:13,444 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:23:13,672 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:23:13,728 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:24:13,862 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:24:13,932 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:25:14,157 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:25:14,229 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:26:14,436 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:26:14,483 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:27:14,706 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:27:14,772 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:28:14,923 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:28:14,959 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:29:15,371 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:29:15,747 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:30:15,879 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:30:15,930 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:31:16,409 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:31:16,468 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:32:16,718 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:32:16,800 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:33:17,117 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:33:17,456 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:34:18,000 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:34:18,331 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:35:18,566 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:35:18,607 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:36:18,770 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:36:18,833 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:37:19,075 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:37:19,128 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:38:19,261 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:38:19,325 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:39:19,476 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:39:19,541 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:40:20,032 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:40:20,102 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:41:20,309 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:41:20,362 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:42:20,656 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:42:21,004 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:43:21,482 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:43:21,540 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:44:22,031 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:44:22,087 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:45:22,572 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:45:22,628 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:46:23,119 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:46:23,183 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:47:23,678 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:47:23,730 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:48:23,959 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:48:24,015 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:49:24,499 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:49:24,539 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:50:24,781 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:50:24,826 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:51:25,291 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:51:25,338 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:52:25,582 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:52:25,643 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:53:26,141 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:53:26,205 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:54:26,686 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:54:26,741 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:55:27,224 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:55:27,278 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:56:27,435 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:56:27,499 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:57:27,743 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:57:27,797 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:58:28,012 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:58:28,056 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 11:59:28,199 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 11:59:28,254 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 12:00:28,541 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 12:00:28,623 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Queued events for site localhost
+[DEBUG] 2018-11-13 12:01:34,816 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 12:01:34,820 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Access denied for site localhost
+[DEBUG] 2018-11-13 12:02:36,227 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 12:02:36,232 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Access denied for site localhost
+[DEBUG] 2018-11-13 12:03:39,137 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 12:03:39,142 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Access denied for site localhost
+[DEBUG] 2018-11-13 12:04:42,315 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 12:04:42,318 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Access denied for site localhost
+[DEBUG] 2018-11-13 12:05:52,116 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 12:05:52,120 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Access denied for site localhost
+[DEBUG] 2018-11-13 12:06:57,534 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 12:06:57,535 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Access denied for site localhost
+[DEBUG] 2018-11-13 12:07:58,693 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 12:07:58,694 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Access denied for site localhost
+[DEBUG] 2018-11-13 12:09:05,673 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 12:09:05,676 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Access denied for site localhost
+[DEBUG] 2018-11-13 12:10:08,322 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 12:10:08,324 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: localhost
+Access denied for site localhost
+[DEBUG] 2018-11-13 12:11:09,013 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 12:12:10,954 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 12:13:11,597 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 12:14:12,237 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 12:15:12,442 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 12:16:13,616 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 12:17:14,681 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 12:18:14,923 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 12:19:15,149 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 12:20:15,411 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 12:21:17,537 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 12:22:17,772 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 12:23:19,882 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 12:24:20,081 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 12:25:20,364 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 12:26:22,158 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 17:55:11,622 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 17:56:11,790 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 17:57:12,242 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 17:58:13,390 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 17:58:19,858 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 17:59:22,076 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 17:59:22,160 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:00:25,327 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:00:26,081 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:01:31,192 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:01:31,675 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:02:34,098 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:02:34,415 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:03:35,627 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:03:36,145 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:04:36,307 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:04:36,376 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:05:37,128 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:05:38,134 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:06:38,462 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:06:38,531 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:07:38,762 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:07:38,854 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:08:39,095 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:08:39,156 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:09:39,418 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:09:39,485 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:10:39,730 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:10:39,794 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:11:40,026 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:11:40,078 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:12:40,213 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:12:40,270 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:13:40,517 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:13:40,581 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:14:40,820 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:14:40,886 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:15:41,505 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:15:41,717 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:16:41,965 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:16:42,030 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:17:42,515 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:17:42,703 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:18:42,949 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:18:43,014 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:19:43,241 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:19:43,308 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:20:43,457 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:20:43,519 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:21:43,772 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:21:43,836 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:22:44,718 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:22:44,782 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:23:45,010 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:23:45,075 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:24:45,527 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:24:45,893 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:25:46,024 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:25:46,070 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:26:46,314 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:26:46,368 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:27:46,498 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:27:46,555 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:28:46,783 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:28:46,858 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:29:46,998 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:29:47,063 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:30:47,262 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:30:47,317 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:31:47,518 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:31:47,558 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:32:47,813 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:32:47,871 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:33:48,073 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:33:48,125 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:34:48,355 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:34:48,420 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:35:49,032 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:35:49,095 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:36:49,576 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:36:49,642 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:37:49,874 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:37:49,920 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:38:50,387 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:38:50,449 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:39:50,681 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:39:50,735 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:40:50,883 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:40:50,939 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:41:51,081 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:41:51,126 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:42:51,273 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:42:52,707 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:43:52,943 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:43:52,994 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:44:53,698 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:44:54,334 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:45:54,572 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:45:54,626 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:46:54,851 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:46:54,899 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:47:55,302 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:47:55,692 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:48:55,861 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:48:55,928 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:49:56,160 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:49:56,213 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:50:57,731 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:50:58,042 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:51:58,274 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:51:58,336 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:52:58,630 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:52:58,926 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:53:59,622 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:53:59,965 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:55:00,792 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:55:00,847 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:56:01,133 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:56:01,214 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:57:01,450 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:57:01,497 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:58:02,020 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:58:02,105 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 18:59:02,272 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 18:59:02,323 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 19:00:02,499 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 19:00:02,584 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 19:01:02,809 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 19:01:02,875 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 19:02:03,130 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 19:02:03,194 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-13 19:03:03,423 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-13 19:03:03,487 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 11:53:52,987 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 11:53:53,666 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 11:54:55,308 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 11:54:55,390 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 11:55:55,879 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 11:55:55,920 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 11:56:56,056 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 11:56:56,148 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 11:57:56,300 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 11:57:56,349 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 11:58:56,493 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 11:58:56,561 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 11:59:57,711 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 11:59:57,770 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:00:58,045 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:00:58,120 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:01:58,241 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:01:58,283 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:02:58,701 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:02:58,793 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:03:58,922 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:03:58,965 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:04:55,769 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:04:56,396 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:04:59,110 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:04:59,163 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:05:56,815 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:05:57,148 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:05:59,539 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:06:00,135 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:06:57,282 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:06:57,337 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:07:00,301 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:07:00,363 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[ERROR] 2018-11-14 12:07:07,696 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/app.py:
+Site: websoc
+Form Dict: {
+ "cmd": "frappe.desk.notifications.get_notifications"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/a2k/nextErp/frappe-bench/apps/frappe/frappe/app.py", line 55, in application
+    response = frappe.handler.handle()
+  File "/home/a2k/nextErp/frappe-bench/apps/frappe/frappe/handler.py", line 20, in handle
+    data = execute_cmd(cmd)
+  File "/home/a2k/nextErp/frappe-bench/apps/frappe/frappe/handler.py", line 55, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/a2k/nextErp/frappe-bench/apps/frappe/frappe/__init__.py", line 1007, in call
+    return fn(*args, **newargs)
+  File "/home/a2k/nextErp/frappe-bench/apps/frappe/frappe/__init__.py", line 489, in wrapper_fn
+    retval = fn(*args, **get_newargs(fn, kwargs))
+  File "/home/a2k/nextErp/frappe-bench/apps/frappe/frappe/desk/notifications.py", line 32, in get_notifications
+    "open_count_doctype": get_notifications_for_doctypes(config, notification_count),
+  File "/home/a2k/nextErp/frappe-bench/apps/frappe/frappe/desk/notifications.py", line 111, in get_notifications_for_doctypes
+    if e.args[0]!=1412:
+IndexError: tuple index out of range
+[ERROR] 2018-11-14 12:07:08,608 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2018-11-14 12:07:07.697239-127.0.0.1-b02
+[DEBUG] 2018-11-14 12:07:57,560 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:07:57,617 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:08:00,794 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:08:00,860 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:08:57,796 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:08:57,984 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:09:01,948 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:09:02,056 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:09:58,416 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:09:58,758 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:10:03,566 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:10:04,355 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:10:58,914 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:10:58,973 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:11:04,668 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:11:05,081 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:11:59,121 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:11:59,174 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:12:05,330 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:12:05,391 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:12:59,405 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:12:59,460 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:13:05,523 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:13:05,576 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:13:59,753 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:14:00,054 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:14:06,350 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:14:06,714 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:15:00,292 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:15:00,344 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:15:06,973 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:15:07,040 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:16:00,840 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:16:01,184 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:16:07,246 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:16:07,289 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:17:01,393 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:17:01,447 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:17:07,430 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:17:07,485 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:18:01,678 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:18:01,732 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:18:07,718 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:18:07,773 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:19:01,960 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:19:02,017 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:19:07,908 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:19:07,961 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:20:02,224 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:20:02,312 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:20:08,205 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:20:08,303 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:21:02,685 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:21:03,004 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:21:08,545 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:21:08,738 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:22:03,225 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:22:03,270 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:22:08,975 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:22:09,038 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:23:03,505 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:23:03,558 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:23:09,547 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:23:09,719 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:24:03,778 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:24:03,842 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:24:09,977 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:24:10,042 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:25:04,083 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:25:04,304 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:25:10,289 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:25:10,354 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:26:04,539 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:26:04,594 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:26:10,592 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:26:10,656 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:27:04,828 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:27:04,891 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:27:10,897 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:27:10,954 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:28:05,282 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:28:05,671 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:28:11,207 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:28:11,260 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:29:05,872 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:29:05,909 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:29:11,606 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:29:11,914 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:30:06,024 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:30:06,077 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:30:12,100 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:30:12,145 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:30:52,768 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:30:52,819 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:31:06,272 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:31:06,316 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:31:12,348 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:31:12,389 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:31:53,269 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:31:53,886 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:32:06,428 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:32:06,503 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:32:12,574 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:32:12,623 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:32:54,206 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:32:54,306 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:33:06,609 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:33:06,643 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:33:12,815 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:33:12,870 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:33:54,442 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:33:54,508 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:34:07,100 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:34:07,149 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:34:13,054 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:34:13,098 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:35:07,268 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:35:07,313 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:35:13,292 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:35:13,326 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:35:44,140 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:35:44,514 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:36:07,515 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:36:07,583 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:36:13,515 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:36:13,548 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:36:44,621 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:36:44,663 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:37:07,789 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:37:08,134 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:37:13,754 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:37:13,822 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:37:44,769 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:37:44,814 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:38:08,327 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:38:08,381 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:38:13,993 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:38:14,039 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:38:45,246 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:38:45,296 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:39:08,586 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:39:08,628 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:39:14,239 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:39:14,284 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:39:45,487 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:39:45,535 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:40:08,982 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:40:09,309 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:40:14,489 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:40:14,533 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:40:45,735 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:40:45,780 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:41:09,811 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:41:09,856 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:41:14,729 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:41:14,773 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:41:45,965 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:41:46,313 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:42:10,002 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:42:10,048 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:42:14,965 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:42:15,008 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:42:46,507 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:42:46,550 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:43:10,257 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:43:10,297 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:43:15,202 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:43:15,235 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:43:46,986 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:43:47,306 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:44:10,499 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:44:10,572 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:44:15,425 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:44:15,458 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:44:47,494 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:44:47,539 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:45:10,777 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:45:10,819 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:45:15,659 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:45:15,704 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:45:47,740 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:45:47,775 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:46:11,121 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:46:11,155 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:46:15,808 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:46:15,853 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:46:47,968 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:46:48,017 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:47:12,189 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:47:13,635 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:47:16,367 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:47:16,441 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:47:48,955 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:47:49,154 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:48:13,799 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:48:13,867 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:48:16,588 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:48:16,637 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:48:49,292 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:48:49,338 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:49:14,101 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:49:14,156 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:49:16,815 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:49:16,869 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:49:49,755 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:49:49,847 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:50:14,680 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:50:15,009 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:50:17,448 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:50:18,474 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:50:50,074 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:50:50,130 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:51:15,268 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:51:15,323 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:51:18,629 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:51:18,707 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:51:50,827 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:51:50,886 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:52:15,850 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:52:15,945 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:52:19,095 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:52:19,464 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:52:51,121 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:52:51,183 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:53:16,171 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:53:16,236 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:53:19,605 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:53:19,690 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:53:51,341 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:53:51,452 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:54:16,466 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:54:16,521 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:54:19,959 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:54:20,015 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:54:51,588 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:54:51,654 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:55:16,760 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:55:16,816 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:55:20,749 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:55:21,490 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:55:51,891 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:55:52,899 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:56:16,963 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:56:17,025 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:56:21,642 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:56:21,700 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:56:54,351 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:56:55,002 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:57:17,177 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:57:17,231 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:57:21,859 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:57:21,914 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:57:55,231 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:57:55,282 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:58:17,463 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:58:17,510 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:58:22,149 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:58:23,756 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:58:55,414 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:58:55,495 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:59:17,994 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:59:18,040 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:59:23,984 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:59:24,037 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 12:59:55,724 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 12:59:55,777 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 13:00:18,285 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 13:00:18,360 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 13:00:24,877 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 13:00:24,940 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 13:00:56,025 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 13:00:56,087 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 13:01:18,514 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 13:01:18,570 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 13:01:25,171 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 13:01:25,235 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 13:01:56,248 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 13:01:56,302 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 13:02:18,723 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 13:02:18,780 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 13:02:25,376 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 13:02:25,430 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 13:02:56,445 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 13:02:56,501 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 13:03:19,013 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 13:03:19,079 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 13:03:25,894 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 13:03:26,200 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 13:03:57,290 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar
+[DEBUG] 2018-11-14 13:03:57,893 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: websoc
+Queued events for site websoc
+[DEBUG] 2018-11-14 13:04:19,326 | /home/a2k/nextErp/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: foo.bar
+Queued events for site foo.bar

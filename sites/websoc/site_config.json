@@ -1,0 +1,14 @@
+{
+ "db_name": "_2acb655b84609401", 
+ "db_password": "gES6CuxdcVKCze9n", 
+ "db_type": "mariadb", 
+ "dormant": true, 
+ "limits": {
+  "space_usage": {
+   "backup_size": 3.0, 
+   "database_size": 27.02, 
+   "files_size": 2.0, 
+   "total": 32.02
+  }
+ }
+}
